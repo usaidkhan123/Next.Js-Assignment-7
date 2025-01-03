@@ -1,6 +1,6 @@
 "use client";
 import React, { useEffect, useState } from "react";
-
+import Image from "next/image"
 interface Product {
     id: number;
     title: string;
@@ -32,13 +32,13 @@ const ClientPage = () => {
                         key={product.id}
                         className="bg-white rounded shadow p-4 flex flex-col items-center"
                     >
-                       {/* <Image
+                        <Image
                           src={product.image}
                           alt={product.title}
                           width={128}
                           height={128} 
                           className="mb-4"
-                        /> */}
+                        /> 
 
                         <h2 className="text-lg font-semibold">{product.title}</h2>
                         <p className="text-gray-500">${product.price}</p>
